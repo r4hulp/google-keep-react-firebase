@@ -20,8 +20,8 @@ class Note extends Component {
     this.setState({ editMode: false });
   }
   customStyles = {
-      borderRadius:10
-  }
+    borderRadius: 10
+  };
   render() {
     return (
       <React.Fragment>
@@ -42,7 +42,12 @@ class Note extends Component {
           onClose={this.hide.bind(this)}
           customStyles={this.customStyles}
         >
-          <Update note={this.props.note} />
+          <Update
+            hideModal={this.hide.bind(this)}
+            updateNote={this.props.updateNote}
+            deleteNote={this.props.deleteNote}
+            note={this.props.note}
+          />
         </Rodal>
       </React.Fragment>
     );

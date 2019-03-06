@@ -2,26 +2,56 @@ import React, { Component } from "react";
 import DeleteIcon from "./Icons/DeleteIcon";
 
 class Update extends Component {
-  state = {};
+  titleRef = React.createRef();
+  contentRef = React.createRef();
+  updateNote = event => {
+    event.preventDefault();
+
+    const updatedNote = {
+      ...this.props.note,
+      [event.currentTarget.name]: event.currentTarget.value
+    };
+    this.props.updateNote(updatedNote);
+  };
+
+  deleteNote = () => {
+    this.props.deleteNote(this.props.note);
+  }
+
   render() {
     return (
       <React.Fragment>
-        <form className="edit-form">
-          <input name="title" placeholder="Title" />
-          <textarea name="content" placeholder="Take a note..." rows="8" />
-          <class className="modal-footer">
+        <div className="edit-form">
+          <input
+            name="title"
+            value={this.props.note.title}
+            onChange={this.updateNote}
+            placeholder="Title"
+          />
+          <textarea
+            name="content"
+            value={this.props.note.content}
+            onChange={this.updateNote}
+            placeholder="Take a note..."
+            rows="8"
+          />
+          <div className="modal-footer">
             <button
-              //   @click="remove"
+              onClick={this.deleteNote}
               type="button"
-              class="delete-button"
+              className="delete-button"
             >
               <DeleteIcon />
             </button>
-            <button type="submit" class="submit-button">
+            <button
+              type="button"
+              onClick={this.props.hideModal}
+              className="submit-button"
+            >
               <span>Done</span>
             </button>
-          </class>
-        </form>
+          </div>
+        </div>
       </React.Fragment>
     );
   }

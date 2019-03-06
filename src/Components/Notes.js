@@ -9,7 +9,12 @@ class Notes extends Component {
     return (
       <div className="notes">
         {this.props.notes.map(note => (
-          <Note key={note.id} note={note} />
+          <Note
+            key={note.id}
+            deleteNote={this.props.deleteNote}
+            updateNote={this.props.updateNote}
+            note={note}
+          />
         ))}
       </div>
     );
