@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+import EditIcon from "./Icons/EditIcon";
 
 class Note extends Component {
-  render() {
+    editNote = () => {
+        console.log("open the modal");
+    }
+    render() {
     return (
-      <div className="note">
-        {/* <EditIcon /> */}
+      <div onClick={this.editNote} className="note">
+        <EditIcon />
 
         <div>
           <h1>{this.props.note.title}</h1>
