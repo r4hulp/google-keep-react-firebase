@@ -8,15 +8,11 @@ class App extends Component {
     notes: []
   };
 
-  addNote = (note) => {
-    //1. get copy of notes
-    const notes = {...this.state.notes};
-    //2. push note
-    notes.push(note);
-    //3. update staet
-    this.setState({notes});
-
-  }
+  addNote = note => {
+    note.id = Date.now();
+    
+    this.setState({notes: [...this.state.notes, note]});
+  };
 
   render() {
     return (
@@ -36,7 +32,7 @@ class App extends Component {
         </div>
 
         <Create addNote={this.addNote} />
-        <Notes />
+        <Notes notes={this.state.notes} />
       </div>
     );
   }
