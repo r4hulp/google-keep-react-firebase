@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+  }
+  .create-note {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    z-index: 10;
+    button {
+      @include flex-center;
+      position: absolute;
+      right: 18px;
+      bottom: -18px;
+      background: $vue-green;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      box-shadow: $shadow;
+      font-size: $fz-xl;
+      line-height: 1;
+      text-align: center;
+      span {
+        margin-top: -3px;
+      }
+    }
+  }

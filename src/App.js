@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./Styles/App.scss";
 import Create from "./Components/Create";
 import Notes from "./Components/Notes";
 

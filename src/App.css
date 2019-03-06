@@ -34,8 +34,6 @@ body {
   width: 30px;
   margin: 0 8px;
 }
-.logo.react {
-}
 
 .logos .logo img {
   max-width: 100%;
@@ -65,11 +63,3 @@ body {
   display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
