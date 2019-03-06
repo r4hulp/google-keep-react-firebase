@@ -7,8 +7,7 @@ class Notes extends Component {
   }
   render() {
     return (
-      <div>
-        <p>Notes: </p>
+      <div class="notes">
         {this.props.notes.map(note => (
           <Note key={note.id} note={note} />
         ))}

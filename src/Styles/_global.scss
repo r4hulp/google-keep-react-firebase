@@ -140,6 +140,53 @@ html {
       font-weight: 400;
     }
   }
+
+  .notes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    position: relative;
+    margin: 50px auto;
+  }
+  
+  .note {
+    background-color: $white;
+    border: 1px solid $light-grey;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: default;
+    transition: $transition;
+    position: relative;
+    &:hover,
+    &:focus {
+      box-shadow: $shadow;
+      svg {
+        opacity: 0.75;
+      }
+    }
+    h1 {
+      font-size: 18px;
+    }
+    pre {
+      font-family: $ff-roboto;
+      white-space: pre-wrap;
+    }
+    svg {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 25px;
+      height: 25px;
+      opacity: 0;
+      transition: $transition;
+      cursor: pointer;
+    }
+    .empty {
+      color: $grey;
+      font-size: $fz-xl;
+      font-family: $ff-product;
+    }
+  }
   
   #app {
     padding: 50px 100px;
