@@ -10,10 +10,13 @@ class App extends Component {
 
   addNote = note => {
     note.id = Date.now();
-    
+
     this.setState({notes: [...this.state.notes, note]});
   };
 
+  componentDidMount(){
+    this.addNote({title:"Sample Note", content:"Hi there"});
+  }
   render() {
     return (
       <div id="app" className="App">

@@ -1,22 +1,50 @@
 import React, { Component } from "react";
+import Rodal from "rodal";
 import EditIcon from "./Icons/EditIcon";
 
-class Note extends Component {
-    editNote = () => {
-        console.log("open the modal");
-    }
-    render() {
-    return (
-      <div onClick={this.editNote} className="note">
-        <EditIcon />
+// include styles
+import "rodal/lib/rodal.css";
 
-        <div>
-          <h1>{this.props.note.title}</h1>
-          <p>
+import Update from "./Update";
+
+class Note extends Component {
+  state = { editMode: false };
+  editNote = () => {
+    console.log("open the modal");
+    this.show();
+  };
+  show() {
+    this.setState({ editMode: true });
+  }
+  hide() {
+    this.setState({ editMode: false });
+  }
+  customStyles = {
+      borderRadius:10
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div onClick={this.editNote} className="note">
+          <EditIcon />
+
+          <div>
+            <h1>{this.props.note.title}</h1>
             <pre>{this.props.note.content}</pre>
-          </p>
+          </div>
         </div>
-      </div>
+
+        <Rodal
+          width={600}
+          height={300}
+          visible={this.state.editMode}
+          closeMaskOnClick={true}
+          onClose={this.hide.bind(this)}
+          customStyles={this.customStyles}
+        >
+          <Update note={this.props.note} />
+        </Rodal>
+      </React.Fragment>
     );
   }
 }

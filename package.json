@@ -16,6 +16,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "2.1.5",
     "react-transition-group": "^2.2.1",
+    "rodal": "^1.6.3",
     "serve": "^10.1.1",
     "stylus": "0.54.5"
   },
