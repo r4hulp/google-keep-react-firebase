@@ -1,7 +1,7 @@
 # Reactive Keep with Firebase 🔥 
 ---
 
-
+![Screenshot](/screenshots/screenshot.png)
 
 This Clone is created to learn different aspects of ReactJS and Firebase. 
 
