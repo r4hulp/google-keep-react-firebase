@@ -5,7 +5,7 @@
 
 This Clone is created to learn different aspects of ReactJS and Firebase. 
 
-##Technologies used -
+## Technologies used -
 - ReactJS
 - Firebase
 - re-base
