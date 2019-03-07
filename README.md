@@ -3,7 +3,7 @@
 
 ![Screenshot](/screenshots/screenshot.png)
 
-This Clone is created to learn different aspects of ReactJS and Firebase. 
+I created this Google Keep clone to learn the different aspects of ReactJS and Firebase. 
 
 ## Technologies used -
 - ReactJS
@@ -42,3 +42,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ---
+
+## Inspired by - 
+- [Brittany Chiang's repository](https://github.com/bchiang7/google-keep-vue-firebase)
+- [Scotch.io Tuorial ](https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-1)
