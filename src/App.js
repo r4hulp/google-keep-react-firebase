@@ -84,7 +84,7 @@ class App extends Component {
           <span className="logo firebase">
             <img src="./assets/images/firebase-logo.png" alt="Firebase" />
           </span>
-          <span className="plus">👉 </span>
+          <span className="plus">👉</span>
           <span className="logo react">
             <img src="./assets/images/react-firebase.svg" alt="React" />
           </span>
