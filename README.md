@@ -1,8 +1,12 @@
 # Reactive Keep with Firebase 🔥 
 
 
+This is a clone of Google Keep. Overnight project. Developed just for a learning purpose. Will eventually pivot from original inspiration and work on adding more features... 😉
+
 [Demo](https://rekeep.netlify.com/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a2a8f2d-a2a4-4399-bfdb-714ca3decd5e/deploy-status)](https://app.netlify.com/sites/rekeep/deploys)
+---
 ![Screenshot](/screenshots/screenshot.png)
 
 I created this Google Keep clone to learn the different aspects of ReactJS and Firebase. 
