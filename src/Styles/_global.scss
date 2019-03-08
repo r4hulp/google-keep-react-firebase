@@ -113,6 +113,11 @@ pre {
   margin: 0 0 10px;
 }
 
+footer {
+  position: fixed;
+  bottom:0; right:0;
+}
+
 .logos {
   @include flex-center;
   margin: 0 auto 30px;

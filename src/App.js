@@ -96,6 +96,37 @@ class App extends Component {
           deleteNote={this.deleteNote}
           updateNote={this.updateNote}
         />
+        <footer>
+          <a
+            className="github-button"
+            href="https://github.com/r4hulp/google-keep-react-firebase"
+            data-icon="octicon-star"
+            data-size="large"
+            aria-label="Star r4hulp/google-keep-react-firebase on GitHub"
+          >
+            Star
+          </a>
+          &nbsp;
+          <a
+            className="github-button"
+            href="https://github.com/r4hulp/google-keep-react-firebase/fork"
+            data-icon="octicon-repo-forked"
+            data-size="large"
+            aria-label="Fork r4hulp/google-keep-react-firebase on GitHub"
+          >
+            Fork
+          </a>
+          &nbsp;
+          <a
+            className="github-button"
+            href="https://github.com/r4hulp/google-keep-react-firebase/subscription"
+            data-icon="octicon-eye"
+            data-size="large"
+            aria-label="Watch r4hulp/google-keep-react-firebase on GitHub"
+          >
+            Watch
+          </a>
+        </footer>
       </div>
     );
   }
